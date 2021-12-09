@@ -3,11 +3,11 @@
   <div class="header">
     <router-link to="/">
       <div class="logo">
-        <img src="/ordinary.png">
+        <img src="/logo.png">
       </div>
     </router-link>
     <div class="title">
-      <h1>Museum of Ordinary Objects</h1>
+      <h1>Car Tracker</h1>
     </div>
   </div>
   <div class="content">
@@ -15,6 +15,8 @@
   </div>
   <div class="footer">
     <router-link to="/admin">Admin</router-link>
+    <p></p>
+    <a href="https://github.com/maxaham/Car-Tracker/blob/master/tutorials/1-installing-packages.md"> Repository</a>
   </div>
 </div>
 </template>
@@ -30,14 +32,19 @@ body {
   background: #fff;
   padding: 0px;
   margin: 0px;
+  color: white;
 }
 
 /* Header */
 .header {
   display: flex;
   padding: 10px 100px 0px 100px;
-  background-color: #5BDEFF;
+  background-color: #FFFFFF;
   color: #1C454F;
+}
+
+.header img {
+  width: 95px;
 }
 
 .title {
@@ -51,11 +58,19 @@ body {
 .content {
   padding: 20px 100px;
   min-height: 500px;
+  background-image: url("/back.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: black;
 }
 
 /* Footer */
 .footer {
-  height: 50px;
+  /*position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;*/
+  height: 70px;
   padding: 20px 100px 0px 100px;
   background: #e3e3e3;
   font-size: 12px;

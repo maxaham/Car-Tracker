@@ -1,15 +1,18 @@
 <template>
 <div class="admin">
-    <h1>The Admin Page!</h1>
+    <h1>Add a new Car</h1>
     <div class="heading">
       <div class="circle">1</div>
-      <h2>Add an Item</h2>
+      <h2>Add a Car</h2>
     </div>
     <div class="add">
       <div class="form">
         <input v-model="title" placeholder="Title">
+        <p></p>
         <input v-model="description" placeholder="Description">
+        <p></p>
         <input type="file" name="photo" @change="fileChanged">
+        <p></p>
         <button @click="upload">Upload</button>
       </div>
       <div class="upload" v-if="addItem">
@@ -19,7 +22,7 @@
     </div>
     <div class="heading">
       <div class="circle">2</div>
-      <h2>Edit/Delete an Item</h2>
+      <h2>Edit or Remove a Car</h2>
     </div>
     <div class="edit">
       <div class="form">
@@ -150,7 +153,6 @@ export default {
 }
 
 .circle {
-  border-radius: 50%;
   width: 18px;
   height: 18px;
   padding: 8px;

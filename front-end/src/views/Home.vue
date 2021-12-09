@@ -57,6 +57,7 @@ export default {
   margin: 0 0 1.5em;
   display: inline-block;
   width: 100%;
+  object-fit: contain;
 }
 
 .image img {
